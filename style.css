@@ -1,0 +1,25 @@
+:root {
+  --text-color: #66809a;
+  --black-text-color: #0b1033;
+  --white-text-color: #ffffff;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.section-title {
+  font-size: 48px;
+  line-height: 1.4;
+
+  text-transform: capitalize;
+}
+
+.title-white {
+  color: var(--white-text-color);
+}
+.title-black {
+  color: var(--black-text-color);
+}
