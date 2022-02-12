@@ -6,37 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header>
-        <a href="#">
-            <img src="./images/logo.jpg" alt="logo GOIT" width="100" height="30" />
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#start">Start now</a></li>
-                <li><a href="#courses">Our courses</a></li>
-                <li><a href="#graduates">Graduates</a></li>
-                <li><a href="#facts">IT quick facts</a></li>
-                <li><a href="#help">Need help?</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#">
+                <img src="./images/logo.jpg" alt="logo GOIT" width="100" height="30" />
+            </a>
+            <nav class="header-nav">
+                <ul class="list header-nav-list">
+                    <li class="header-nav-item"><a class="link header-nav-link" href="#start">Start now</a></li>
+                    <li class="header-nav-item"><a class="link header-nav-link" href="#courses">Our courses</a></li>
+                    <li class="header-nav-item"><a class="link header-nav-link" href="#graduates">Graduates</a></li>
+                    <li class="header-nav-item"><a class="link header-nav-link" href="#facts">IT quick facts</a></li>
+                    <li class="header-nav-item"><a class="link header-nav-link" href="#help">Need help?</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <h1>GOIT</h1>
-            <p>
-                Imagine yourself going from a dead-end job to an exciting high-income
-                career in an industry that is constantly evolving. Sounds great,
-                doesn’t it?
-            </p>
-            <p>A New Career. A New You.</p>
-            <p>No time to lose: GO IT for something new!</p>
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">GOIT</h1>
+                    <p class="hero-descript">
+                        Imagine yourself going from a dead-end job to an exciting high-income
+                        career in an industry that is constantly evolving. Sounds great,
+                        doesn’t it?
+                    </p>
+                    <p class="hero-label">No time to lose: GO IT for something new!</p>
+
+                </div>
+                <div class="hero-image">
+                    <!-- <p>A New Career. A New You.</p> -->
+                    <img src="./images/hero-img.png" alt="happy girl" width="520" height="571">
+                </div>
+            </div>
         </section>
         <section>
             <h2 class="setion-title">Start your new career with GOIT</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <h3>Our mentors</h3>
                     <p>Pros in what they do and you get to learn from them</p>
@@ -53,7 +70,7 @@
                     </p>
                 </li>
             </ul>
-            <ul>
+            <ul class="list">
                 <li>
                     <p><span>3817</span>graduates</p>
                 </li>
@@ -71,7 +88,7 @@
             <p>We are constantly improving each course, based on the experience and feedback of our graduates. Our
                 programs are pure
                 knowledge and practice, seasoned with interesting projects and gamification.</p>
-            <ul>
+            <ul class="list">
                 <li>
                     <h3>Python For Data Science</h3>
                 </li>
@@ -95,7 +112,7 @@
         <section>
             <h2 class="section-title">GOIT</h2>
             <p>IT companies that hire our graduates</p>
-            <ul>
+            <ul class="list">
                 <li>
                     logo
                 </li>
@@ -121,7 +138,7 @@
         </section>
         <section>
             <h2 class="section-title">IT in the USA</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <p><span>$80k</span>Salary of a Software Developer on average</p>
                 </li>
@@ -144,7 +161,7 @@
         <a href="#">
             <img src="./images/logo.jpg" alt="logo GOIT" width="100" height="30" />
         </a>
-        <ul>
+        <ul class="list">
             <li>
                 <a href="#" target="_blank" rel="noopener noreferrer nofollow">Terms and conditions,</a>
             </li>
@@ -153,18 +170,18 @@
             </li>
         </ul>
         <h3>Contact GoIT:</h3>
-        <ul>
+        <ul class="list">
             <li><a href="tel:+54065550120">(406) 555-0120</a></li>
             <li><a href="mailto:alma.lawson@example.com">alma.lawson@example.com</a></li>
         </ul>
         <button type="button">Connect with Us</button>
-        <ul>
+        <ul class="list">
             <li><a href="" target="_blank" rel="noopener noreferrer nofollow">social-icon</a></li>
             <li><a href="" target="_blank" rel="noopener noreferrer nofollow">social-icon</a></li>
             <li><a href="" target="_blank" rel="noopener noreferrer nofollow">social-icon</a></li>
             <li><a href="" target="_blank" rel="noopener noreferrer nofollow">social-icon</a></li>
         </ul>
-        <ul>
+        <ul class="list">
             <li>pay-icon</li>
             <li>pay-icon</li>
             <li>pay-icon</li>
