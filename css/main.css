@@ -32,6 +32,11 @@
     0px 12.5216px 10.0172px rgba(63, 58, 101, 0.035),
     0px 6.6501px 5.32008px rgba(63, 58, 101, 0.0282725),
     0px 2.76726px 2.21381px rgba(63, 58, 101, 0.0196802);
+  --decor-violet: #7754f6;
+  --decor-red: #ee425a;
+  --decor-green: #8cc146;
+  --decor-yellow: #ffd100;
+  --decor-pink: #d24cb1;
 }
 
 h1,
@@ -188,6 +193,7 @@ body {
 @media (max-width: 767.98px) {
   .hero {
     position: relative;
+    padding-bottom: 350px;
   }
 }
 
@@ -236,6 +242,17 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-img {
+    max-width: 85%;
+    width: auto;
+    max-height: 320px;
   }
 }
 
@@ -270,13 +287,22 @@ body {
   top: 50%;
   transform: translateY(-50%);
   left: -85px;
-  padding: 20px 25px;
-  max-width: 175px;
+  padding: 14px;
+  max-width: 130px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   text-align: center;
   color: var(--dark-text-label);
+}
+
+@media (min-width: 768px) {
+  .hero-image-label {
+    left: -85px;
+    padding: 20px 25px;
+    max-width: 175px;
+    font-size: 16px;
+  }
 }
 
 .hero-image-label::before {
@@ -323,6 +349,13 @@ body {
   grid-template-columns: 0.3fr 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 30px;
+  background-image: url(../images/start-image.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .start-container {
+    background-image: url(../images/start-image@2x.jpg);
+  }
 }
 
 .start-title {
@@ -352,5 +385,182 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: var(--color-grin);
+}
+
+.courses-list {
+  --card-item: 3;
+  counter-reset: item;
+}
+
+.courses-item {
+  counter-increment: item;
+  background-color: teal;
+  padding: 14px;
+}
+
+.courses-item::before {
+  content: counter(item);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #4aab3d;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.courses-item:nth-child(1)::before {
+  background-color: var(--decor-pink);
+  background-image: url(../images/courses/courses-1.svg);
+}
+
+.courses-item:nth-child(1)::before {
+  background-color: var(--decor-yellow);
+  background-image: url(../images/courses/courses-1.svg);
+}
+
+.courses-item:nth-child(1)::before {
+  background-color: var(--decor-green);
+  background-image: url(../images/courses/courses-1.svg);
+}
+
+.courses-item:nth-child(1)::before {
+  background-color: var(--decor-violet);
+  background-image: url(../images/courses/courses-1.svg);
+}
+
+.courses-item:nth-child(1)::before {
+  background-color: var(--decor-red);
+  background-image: url(../images/courses/courses-1.svg);
+}
+
+.courses-item:nth-child(2)::before {
+  background-color: var(--decor-pink);
+  background-image: url(../images/courses/courses-2.svg);
+}
+
+.courses-item:nth-child(2)::before {
+  background-color: var(--decor-yellow);
+  background-image: url(../images/courses/courses-2.svg);
+}
+
+.courses-item:nth-child(2)::before {
+  background-color: var(--decor-green);
+  background-image: url(../images/courses/courses-2.svg);
+}
+
+.courses-item:nth-child(2)::before {
+  background-color: var(--decor-violet);
+  background-image: url(../images/courses/courses-2.svg);
+}
+
+.courses-item:nth-child(2)::before {
+  background-color: var(--decor-red);
+  background-image: url(../images/courses/courses-2.svg);
+}
+
+.courses-item:nth-child(3)::before {
+  background-color: var(--decor-pink);
+  background-image: url(../images/courses/courses-3.svg);
+}
+
+.courses-item:nth-child(3)::before {
+  background-color: var(--decor-yellow);
+  background-image: url(../images/courses/courses-3.svg);
+}
+
+.courses-item:nth-child(3)::before {
+  background-color: var(--decor-green);
+  background-image: url(../images/courses/courses-3.svg);
+}
+
+.courses-item:nth-child(3)::before {
+  background-color: var(--decor-violet);
+  background-image: url(../images/courses/courses-3.svg);
+}
+
+.courses-item:nth-child(3)::before {
+  background-color: var(--decor-red);
+  background-image: url(../images/courses/courses-3.svg);
+}
+
+.courses-item:nth-child(4)::before {
+  background-color: var(--decor-pink);
+  background-image: url(../images/courses/courses-4.svg);
+}
+
+.courses-item:nth-child(4)::before {
+  background-color: var(--decor-yellow);
+  background-image: url(../images/courses/courses-4.svg);
+}
+
+.courses-item:nth-child(4)::before {
+  background-color: var(--decor-green);
+  background-image: url(../images/courses/courses-4.svg);
+}
+
+.courses-item:nth-child(4)::before {
+  background-color: var(--decor-violet);
+  background-image: url(../images/courses/courses-4.svg);
+}
+
+.courses-item:nth-child(4)::before {
+  background-color: var(--decor-red);
+  background-image: url(../images/courses/courses-4.svg);
+}
+
+.courses-item:nth-child(5)::before {
+  background-color: var(--decor-pink);
+  background-image: url(../images/courses/courses-5.svg);
+}
+
+.courses-item:nth-child(5)::before {
+  background-color: var(--decor-yellow);
+  background-image: url(../images/courses/courses-5.svg);
+}
+
+.courses-item:nth-child(5)::before {
+  background-color: var(--decor-green);
+  background-image: url(../images/courses/courses-5.svg);
+}
+
+.courses-item:nth-child(5)::before {
+  background-color: var(--decor-violet);
+  background-image: url(../images/courses/courses-5.svg);
+}
+
+.courses-item:nth-child(5)::before {
+  background-color: var(--decor-red);
+  background-image: url(../images/courses/courses-5.svg);
+}
+
+.courses-item:nth-child(6)::before {
+  background-color: var(--decor-pink);
+  background-image: url(../images/courses/courses-6.svg);
+}
+
+.courses-item:nth-child(6)::before {
+  background-color: var(--decor-yellow);
+  background-image: url(../images/courses/courses-6.svg);
+}
+
+.courses-item:nth-child(6)::before {
+  background-color: var(--decor-green);
+  background-image: url(../images/courses/courses-6.svg);
+}
+
+.courses-item:nth-child(6)::before {
+  background-color: var(--decor-violet);
+  background-image: url(../images/courses/courses-6.svg);
+}
+
+.courses-item:nth-child(6)::before {
+  background-color: var(--decor-red);
+  background-image: url(../images/courses/courses-6.svg);
 }
 /*# sourceMappingURL=main.css.map */
